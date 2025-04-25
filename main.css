@@ -6,6 +6,8 @@
 body {
   text-align: center;
   justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 h1 {
