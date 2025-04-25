@@ -54,11 +54,12 @@ h1 {
   width: 20%;
 }
 
-.comp img {
+.img_comp {
   background-color: white;
-  width: 100px;
+  width: 140px;
+  height: 230px;
   margin: 25px 25px;
-  padding: 50px 15px;
+  /* padding: 50px 15px; */
   border: 1px solid;
   border-radius: 99999px;
   box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
@@ -162,6 +163,7 @@ h1 {
 
   .comp img {
     width: 40px;
+    height: auto;
     margin: 33px 10px;
     padding: 20px 15px;
     border: 1px solid;
@@ -179,7 +181,7 @@ h1 {
   .hasil {
     width: 80%;
     height: 30px;
-    margin: 10px auto;
+    margin: 0px 10px auto auto;
     padding: 10px auto;
     font-size: large;
     font-weight: 300;
@@ -228,6 +230,7 @@ h1 {
 
   .player ul li img {
     width: 40px;
+    height: auto;
     margin: 40px 10px 10px 10px;
     padding: 12px 8px;
     border: 1px solid;
