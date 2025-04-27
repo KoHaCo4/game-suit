@@ -40,6 +40,7 @@ h1 {
 }
 
 .comp {
+  width: 79%;
   background-color: rgb(235, 52, 20);
   margin: 0 100px;
   border-top-right-radius: 66px;
@@ -47,32 +48,43 @@ h1 {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+/* .img-comp {
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */
+
 .comp div {
   color: white;
   padding-top: 15px;
   padding-left: 25px;
   width: 20%;
+  position: absolute;
 }
 
-.img_comp {
+.img-comp {
   background-color: white;
-  width: 140px;
-  height: 230px;
-  margin: 25px 25px;
-  /* padding: 50px 15px; */
+  width: 120px;
+  height: 120px;
+  margin: 10%;
+  padding: 0;
+  object-fit: contain;
   border: 1px solid;
   border-radius: 99999px;
   box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
 }
 
 .hasil {
-  width: 120px;
+  width: 140px;
   height: 50px;
   margin: auto;
   padding: auto;
   font-size: large;
   font-weight: 600;
-  top: 50%;
+  margin-top: -30px;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -82,21 +94,24 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: white;
+  z-index: 10;
 }
 
 .player {
+  position: relative;
   background-color: rgb(30, 73, 255);
   padding-top: 10px;
   margin: 20px 100px;
-  justify-items: end;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-bottom-left-radius: 66px;
   border-bottom-right-radius: 66px;
 }
 
 .player div {
+  position: absolute;
   color: white;
-  margin-right: 10px;
+  padding: 0;
+  margin: 10px;
   width: 20%;
 }
 
@@ -110,20 +125,27 @@ h1 {
 
 .player ul li {
   display: flex;
-  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 50px;
+  border-radius: 99px;
+  overflow: hidden;
 }
 
 .player ul li img {
   background-color: white;
-  width: 100px;
-  margin: 10px 25px;
-  padding: 40px 20px;
-  border: 1px solid;
-  border-radius: 99999px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 99px;
+  object-fit: contain;
 }
 
-.player ul li img:hover {
-  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+.player ul li:hover {
+  box-shadow: rgb(38, 57, 77) 10px 12px 30px -10px;
 }
 
 @media (max-width: 760px) {
@@ -156,6 +178,7 @@ h1 {
   .comp {
     margin: 20px 40px;
     padding: 0;
+    width: 83%;
     border-top-right-radius: 66px;
     border-top-left-radius: 66px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -201,7 +224,6 @@ h1 {
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0px 40px;
-    justify-items: end;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-bottom-left-radius: 66px;
     border-bottom-right-radius: 66px;
@@ -216,7 +238,9 @@ h1 {
   }
 
   .player ul {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
     margin: 0;
@@ -224,6 +248,23 @@ h1 {
   }
 
   .player ul li {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 60px 10px 20px 20px;
+  }
+
+  .player ul li img {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 99px;
+    object-fit: contain;
+  }
+
+  /* .player ul li {
     display: flex;
     margin: 7px;
   }
@@ -235,9 +276,9 @@ h1 {
     padding: 12px 8px;
     border: 1px solid;
     border-radius: 99999px;
-  }
+  } */
 
   .player ul li img:hover {
-    box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+    box-shadow: rgb(38, 57, 77) 10px 20px 30px 0px;
   }
 }

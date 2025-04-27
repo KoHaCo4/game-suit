@@ -14,7 +14,7 @@ function aturanMain(player, computer) {
 }
 
 const putarGambar = () => {
-  const img_comp = document.querySelector(".img_comp");
+  const img_comp = document.querySelector(".img-comp");
   const gambar = ["gajah", "semut", "orang"];
   let i = 0;
   const waktuMulai = new Date().getTime();
@@ -47,7 +47,7 @@ pilihan.forEach((pil) => {
 
     putarGambar();
     setTimeout(() => {
-      const imgComp = document.querySelector(".img_comp");
+      const imgComp = document.querySelector(".img-comp");
       imgComp.setAttribute("src", `img/${pComputer}.png`);
 
       const info = document.querySelector(".hasil");
